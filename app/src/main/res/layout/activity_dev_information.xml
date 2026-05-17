@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_devinfo_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingStart="35dp"
+        android:paddingEnd="35dp"
+        android:paddingTop="32dp"
+        android:paddingBottom="32dp">
+
+        <!-- Screen Title -->
+        <TextView
+            android:id="@+id/screenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dev_information"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#1A5460"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Developer Avatar -->
+        <ImageView
+            android:id="@+id/devAvatar"
+            android:layout_width="198dp"
+            android:layout_height="198dp"
+            android:src="@drawable/ic_avatar"
+            android:contentDescription="@string/developer_avatar"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Developer Name -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/dev_name"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Student Number -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student_no_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/student_number"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Personal Statement -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_statement_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_statement"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Release Version -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="32dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/release_version_label"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/version_1_0_0"
+                android:textSize="20sp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="4dp" />
+
+        </LinearLayout>
+
+        <!-- Exit Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/exitButton"
+            android:layout_width="342dp"
+            android:layout_height="62dp"
+            android:text="@string/exit"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="#08389F"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/ic_exit"
+            app:iconGravity="textStart"
+            android:layout_marginBottom="40dp" />
+
+        <!-- Home Icon -->
+        <ImageButton
+            android:id="@+id/homeButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_home"
+            android:scaleType="centerInside"
+            android:background="@drawable/bg_circular_icon_white"
+            android:tint="#2E73AF"
+            android:contentDescription="@string/home" />
+
+    </LinearLayout>
+
+</ScrollView>

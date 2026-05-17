@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_settings_gradient">
+
+    <!-- Screen Title -->
+    <TextView
+        android:id="@+id/screenTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#1A5460"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="32dp"
+        android:paddingBottom="40dp" />
+
+    <!-- My Profile Row -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/myProfileCard"
+        android:layout_width="346dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="#08389F"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/my_profile"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right"
+                android:contentDescription="@string/navigate"
+                android:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Dev Information Row -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/devInfoCard"
+        android:layout_width="346dp"
+        android:layout_height="62dp"
+        android:layout_gravity="center_horizontal"
+        app:cardBackgroundColor="#08389F"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dev_information"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_chevron_right"
+                android:contentDescription="@string/navigate"
+                android:tint="#FFFFFF" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
