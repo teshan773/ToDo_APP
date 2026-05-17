@@ -2,4 +2,27 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Primary Colors -->
+    <color name="primary_blue">#2E73AF</color>
+    <color name="light_blue">#EAF5FF</color>
+    <color name="dark_navy">#1A5460</color>
+
+    <!-- Surface & Text -->
+    <color name="surface_white">#FFFFFF</color>
+    <color name="text_dark">#49454F</color>
+    <color name="text_dark_1d1b20">#1D1B20</color>
+
+    <!-- Buttons -->
+    <color name="button_blue">#08389F</color>
+
+    <!-- Delete & Error -->
+    <color name="delete_red">#B3261E</color>
+
+    <!-- Gradient Colors -->
+    <color name="gradient_start">#1E88E5</color>
+    <color name="gradient_end">#114B7F</color>
+
+    <!-- Dialog -->
+    <color name="dialog_bg">#E7F3F3</color>
 </resources>
